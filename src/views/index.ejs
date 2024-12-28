@@ -43,7 +43,7 @@
                             <%= dataUser[i].lastName %>
                         </td>
                         <td>
-                            <a href="detail/user/1" target="_blank">Details</a>
+                            <a href="/detail/user/<%= dataUser[i].id %>" target="_blank">Details</a>
                             <button type="button">Edit</button>
                             <button type="button">Delete</button>
                         </td>
@@ -54,6 +54,28 @@
             </tbody>
 
         </table>
+    </div>
+    <div class="create-user-container">
+        <form action="/create-new-user" method="POST">
+            <div>Creat a new user:</div>
+            <div>
+                <label for="">First Name:</label>
+                <input type="text" name="firstName">
+            </div>
+            <div>
+                <label for="">Last Name:</label>
+                <input type="text" name="lastName">
+            </div>
+            <div>
+                <label for="">Email:</label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label for="">Address:</label>
+                <input type="text" name="address">
+            </div>
+            <button type="submit" class="btn-node">Submit</button>
+        </form>
     </div>
 
 </body>

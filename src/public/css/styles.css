@@ -240,3 +240,16 @@
   background-color: #04aa6d;
   color: white;
 }
+
+.create-user-container {
+  padding: 20px;
+}
+
+.create-user-container label {
+  display: block;
+}
+
+.create-user-container .btn-node {
+  margin-top: 15px;
+  cursor: pointer;
+}
